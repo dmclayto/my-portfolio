@@ -1,0 +1,804 @@
+
+
+
+/* ---- Base Rules ---- */
+
+ul{
+    
+    display: flex; 
+    flex-direction: row; 
+  text-align: center;
+    justify-content: space-evenly; 
+    
+}
+li{
+    list-style: none;
+  
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    background: rgb(136,203,171);
+    background: linear-gradient(0deg, rgba(136,203,171,1) 0%, rgba(0,13,60,1) 100%);
+    margin: 0;
+    font-family: 'Merriweather', serif;
+    color: #fff;
+    
+}
+
+
+/* Typeography General*/
+h1 {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 3em;
+    margin: 2em 1rem;
+    animation: fade-up 500ms 400ms backwards;
+}
+
+@media only screen and (min-width: 35em){
+    h1 {
+        font-size: 7em;
+        margin: 2em 4rem 1em;
+        text-align: center;
+    }
+}
+
+h2 {
+    border-bottom: 1px solid #cc1;
+    font-family: 'Oxygen', Sans-Serif;
+    font-size: 3em;
+    color: #fff;
+}
+
+h6 {
+   
+    font-family: 'Oxygen', Sans-Serif;
+    font-size: 1em;
+    color: #fff;
+    text-align: center;
+}
+
+
+p {
+    line-height: 1.6em;
+    
+}
+
+/* ---- Layout Rules ---- */
+
+
+.main-hero {
+    min-height: 40vh;
+    padding-top: 3em;
+    
+}
+
+section {
+    position: relative;
+    min-height: 100vh;
+    
+}
+
+#background{
+    background-image: url(/media/backgroundtech.png);
+    background-size: cover;
+   border-radius: 10px;
+   padding-bottom: 120px;
+   
+   
+}
+
+#udacity__cert{
+    height: 600px;
+    width: 800px;
+}
+
+
+/* Langauges banner*/
+.icon__belt{
+    display: flex;
+   flex-wrap: wrap;
+   gap: 5rem;
+   justify-content: center;
+}
+
+.icon__belt__heading{
+    text-align: center;
+}
+
+#languages__container{
+   
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;  
+}
+
+.language__icon{
+    height: 80px;
+    width: 80px;
+    transition: all 300ms;
+}
+
+.language__icon:hover{
+    filter: brightness(80%);
+    opacity: 0.86;
+    transform: scale(0.9);
+}
+
+.language__flex__col{
+    display: flex;
+    flex-direction: column;
+}
+
+.language__name{
+    text-align: center;
+    font-size: 15px; 
+}
+
+
+
+/*About Me*/
+
+.social__linked{
+    animation:bounce  4s infinite ease-in;
+  height: 50px;
+  width: 50px;
+  background-color: rgb(250, 250, 250);
+  border-radius: 50%;
+  padding: 20px;
+}
+
+.social__linked:hover{
+background-color: rgb(124, 174, 197);
+border-radius: 50%;
+}
+
+
+.social__git{
+    animation:bounce  3s infinite ease-out;
+  height: 50px;
+  width: 50px;
+  background-color: rgb(140, 192, 196);
+  border-radius: 50%;
+  padding: 20px;
+}
+
+.social__git:hover{
+    background-color: whitesmoke;
+    border-radius: 50%;
+}
+
+
+
+.flex{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+}
+.flex__aboutme{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    text-align: center;
+    margin: 0 20px;
+   
+}
+
+.certificates{
+ 
+    display: flex;
+   justify-content: center;
+    text-align: center;
+}
+
+#badge__image{
+    margin-top: 200px;  
+}
+
+#udacity__cert{
+margin-top: 80px;
+}
+
+.flex__about__logos{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+/* Navigation Styles*/
+
+.navlist__item{
+    color: whitesmoke;
+    text-decoration: none;
+    text-align: center;
+    
+}
+.navlist__item:hover{
+    background: #333;
+    color: #fff;
+   
+    transition: ease 0.3s all; 
+    border-radius: 5px;
+}
+
+.navbar__menu  {
+   
+    text-align: center;
+   justify-content: center;
+}
+
+
+
+
+
+.navbar__menu .menu__link:hover {
+    background: #333;
+    color: #fff;
+    transition: ease 0.3s all;
+}
+
+/* Header Styles */
+.page__header {
+    background: linear-gradient(0deg, rgb(50, 84, 94) 0%, rgb(21, 47, 139) 100%);
+    height: 60px;
+   
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+    color: black;
+}
+
+/* Footer Styles */
+.page__footer {
+    background: linear-gradient(0deg, rgba(136,203,171,1) 0%, rgba(0,13,60,1) 100%);
+    padding: 3em;
+    color: #fff;
+}
+
+.page__footer p{
+    color: #fff;
+    text-align: center;
+}
+
+
+/* ---- Theme Rules ---- */
+/* Landing Container Styles */
+.landing__container {
+    padding: 1em;
+  
+  
+}
+
+
+.landing__container2 {
+    padding: 1em; 
+}
+
+
+/*
+@media only screen and (min-width: 35em){
+    .landing__container {
+        max-width: 50em;
+        padding: 4em;
+    }
+}
+
+section:nth-of-type(even) .landing__container {
+    margin-right: 0;
+    margin-left: auto;
+    text-align: center; 
+}
+
+/* Background Circles */
+/* Note that background circles are created with psuedo elements before and after */
+/* Circles appear to be random do to use of :nth-of-type psuedo class */
+section:nth-of-type(odd) .landing__container::before {
+    content: '';
+    background: rgba(255, 255, 255, 0.187);
+    position: absolute;
+    z-index: -5;
+    width: 20vh;
+    height: 20vh;
+    border-radius: 50%;
+    opacity: 0;
+    transition: ease 0.5s all;
+    
+}
+
+section:nth-of-type(even) .landing__container::before {
+    content: '';
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,.1) 0%, rgba(255,255,255,.2) 100%);
+    position: absolute;
+    top: 3em;
+    right: 3em;
+    z-index: -5;
+    width: 10vh;
+    height: 10vh;
+    border-radius: 50%;
+    opacity: 0;
+    transition: ease 0.5s all;
+}
+
+section:nth-of-type(3n) .landing__container::after {
+    content: '';
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,.1) 0%, rgba(255,255,255,.2) 100%);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -5;
+    width: 10vh;
+    height: 10vh;
+    border-radius: 50%;
+    opacity: 0;
+    transition: ease 0.5s all;
+}
+
+section:nth-of-type(3n + 1) .landing__container::after {
+    content: '';
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,.1) 0%, rgba(255,255,255,.2) 100%);
+    position: absolute;
+    right: 20vw;
+    bottom: -5em;
+    z-index: -5;
+    width: 15vh;
+    height: 15vh;
+    border-radius: 50%;
+    opacity: 0;
+    transition: ease 0.5s all;
+}
+
+
+/* ---- Theme State Rules ---- */
+/* Section Active Styles */
+/* Note: your-active-class class is applied through javascript. You should update the class here and in the index.html to what you set in your javascript file.  */
+section.your-active-class {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 100%);
+    
+}
+
+section.your-active-class .landing__container::before {
+    opacity: 1;
+    animation: rotate 4s linear 0s infinite forwards;
+}
+
+section.your-active-class .landing__container::after {
+    opacity: 1;
+    animation: rotate 5s linear 0s infinite forwards reverse;
+}
+
+/* Section Active Styles Keyframe Animations */
+@keyframes rotate {
+	from {
+		transform: rotate(0deg)
+		           translate(-1em)
+		           rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg)
+		           translate(-1em) 
+		           rotate(-360deg);
+	}
+}
+
+
+
+
+
+.active{
+    background-color: rgb(59, 48, 48);
+}
+
+
+.section__title{
+    text-align: center;
+}
+
+#button_stack_section1{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.button__resume{
+    background-color: rgb(197, 54, 54);
+    border-radius: 25px;
+    font-size: 25px;
+    padding: 5px 10px;
+    color: whitesmoke;
+    text-decoration: none;
+}
+.button__resume:hover{
+    color: white;
+    background: black;
+    border-radius: 25px;
+}
+
+.button__rmit{
+   
+  border: #000 1px solid;
+    border-radius: 25px;
+    font-size: 16px;
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 10px 10px;
+}
+
+.button__rmit:hover{
+
+    color: white;
+    background: black;
+    border-radius: 25px;
+}
+
+.button__udacity{
+   
+    border: #000 1px solid;
+    border-radius: 25px;
+    font-size: 16px;
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 10px 10px;
+}
+
+.button__udacity:hover{
+    color: white;
+    background: black;
+    border-radius: 25px;
+}
+
+.name__title{
+    font-size: 40px;
+    color: #fff;
+}
+
+.image-me{
+    border-radius: 40%;
+
+  border: 2px solid whitesmoke;
+ }
+
+
+
+
+   
+
+/*Text animations*/
+
+@keyframes fade-up {
+    0% {
+        opacity: 0;
+        transform: translate(40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+
+@keyframes bounce {
+    0% { transform: translateY(-5px)  }
+    50% { transform: translateY(10px) }
+    100% { transform: translateY(-5px) }
+
+}
+
+/*Section 2*/
+
+.project__list{
+    display: flex;
+    flex-direction: row;
+   margin-bottom: 10px;
+  justify-content: center;
+  text-align: center;
+  
+
+}
+
+    .project__img{
+        
+        height: 400px;
+       width: 700px;
+       margin: auto;
+      
+       
+       
+    }
+
+ 
+    
+    .project__img:hover{
+        filter: brightness(80%);
+        opacity: 1;
+        transform: scale(1.1);
+        transition-duration: 0.5s;
+    }
+    
+
+
+    
+    .project__img--wrapper{
+       display: flex;
+       flex-direction: column;
+       gap: 1.5rem;
+       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.9);
+       background: rgba(24,24,27,0.6);
+       padding: 20px;
+       border-radius: 10px;
+       text-align: center;
+       justify-content: center;
+       width: 100%;
+       
+     
+      
+      
+       
+    
+    
+        transform: translateY(-5%);
+       
+        transition: 0.5s;
+        cursor: pointer;
+      
+       
+     
+    }
+
+    .project__languages__text{
+        font-size: 14px;
+      
+     
+     
+      border-radius: 5px;
+      padding: 3px 3px;
+      margin: auto;
+      text-align: center;
+      
+    }
+
+    .project__name{
+      color: white;
+      font-weight: 600;
+      text-align: center;
+    }
+   
+    .project__info{
+      justify-content: center;
+       
+      
+      color: white;
+   
+      text-align: center;
+    
+    }
+
+   
+
+ 
+    .project__live {
+        background-color: whitesmoke;
+        color: #000;
+        border: #000 1px solid;
+     text-decoration: none;
+      border-radius: 10px;
+      width: fit-content;
+      padding: 3px;
+    text-align: center;
+   
+    }
+    .project__live:hover {
+        background-color:rgb(206, 206, 206);
+        color: black;
+    }
+
+    .source__code__button{
+        background-color: whitesmoke;
+        color: #000;
+        border: #000 1px solid;
+        text-decoration: none;
+        border-radius: 10px;
+        width: fit-content;
+        padding: 3px;
+      text-align: center;
+    }
+
+.source__code__icon{
+    height: 15px;
+    width: 15px;
+    text-align: center;
+}
+ 
+.source__code__button:hover{
+background-color: rgb(206, 206, 206);
+color: black;
+}
+
+   
+    /*contact*/
+
+    .contact__icon{
+        height: 30px;
+        width: 30px;
+        margin-top: 10px;
+       
+       
+    }
+
+    .flex__contact{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        gap: 2rem;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        justify-content: center;
+       
+    }
+
+.contact__container{
+    padding: 1em;
+    text-align: center;
+ 
+}
+
+#credits{
+    margin-top: 400px;
+}
+
+
+/* MEDIA*/
+
+    @media (min-width: 250px) and (max-width: 600px){
+        .project__info{
+         font-size: 10px;
+        }
+
+        .flex{
+            flex-direction: row;
+            text-align: center;
+            justify-content: center;
+        }
+
+        .flex__aboutme{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            text-align: center;
+        }
+
+        #udacity__cert{
+            height: 225px;
+            width: 350px;
+            margin-top: 0;
+        }
+
+        #background{
+            padding-bottom: 0;
+        }
+
+        .name__title{
+            font-size: 25px;
+        }
+
+        h1{
+            font-size: 25px;
+            padding-top: 50px;
+        }
+
+        .section__title{
+            font-size: 25px;
+        }
+
+    .social__git{
+        height: 30px;
+        width: 30px;
+    }
+
+    .social__linked{
+    height: 30px;
+    width: 30px;
+    }
+
+    .button__resume{
+        font-size: 20px;
+    }
+
+    /* Section 2*/
+
+    .project__list{
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+     
+     
+     
+      
+    }
+    .project__img{
+     width: 250px;
+     height: 150px;
+
+   
+       
+    }
+
+    .project__img--wrapper{
+        width: auto;
+    }
+
+  
+
+    .project__info{
+        padding: 0;
+        font-size: 16px;
+        
+      }
+
+/* languages banner section*/
+      .language__icon{
+        height: 40px;
+        width: 40px;  
+    }
+    .icon__belt{
+        display: flex;
+        flex-direction: row;
+       flex-wrap: wrap;
+       gap: 1rem;
+       justify-content: center;
+    }
+    .language__name{
+        text-align: center;
+        font-size: 10px; 
+    }
+#languages__container{
+    padding: 10px;
+}
+
+#button_stack_section1{
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutme__text{
+    font-size: 16px;
+    padding: 10px;
+}
+
+.project__languages__text{
+    font-size: 12px;
+   
+}
+
+.project__name{
+    font-size: 18px;
+}
+
+/* Contact*/
+
+.contact__info{
+   font-size: 16px;
+   
+   
+}
+
+.flex__contact{
+    justify-content: left;
+}
+
+#credits{
+    margin-top: 150px;
+    font-size: 15px;
+    
+
+    }
+}
